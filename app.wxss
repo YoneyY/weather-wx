@@ -1,0 +1,17 @@
+/**app.wxss**/
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+@import "./fonts/iconfont.wxss";
+/* @font-face{
+  font-family: 'Tensentype JiaLiXianYuanF';
+  src: url("./fonts/TensentypeJiaLiXianYuanF.eot");
+  font-weight: normal;
+  font-style: normal;
+} */

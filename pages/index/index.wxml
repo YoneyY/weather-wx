@@ -1,0 +1,41 @@
+<view class='container'>
+  <!-- 城市定位 -->
+  <view class='city'>
+    <text class='icon iconfont icondingwei'></text>
+    <text>{{city}}</text>
+  </view>
+  <!-- 天气 -->
+  <view class='weather'>
+    <view class='weathers'>
+      <text class='temperature'>{{temperature}}°</text>
+      <text>{{weather}}</text>
+    </view>
+  </view>
+  
+  <!-- 特效 -->
+  <view class='weathericon'>
+    <!-- <text class='yun iconfont iconyin'></text> -->
+    <image class='yun' mode='aspectFit' src='../../assets/img/{{weather ? weather : "未知"}}.png'></image>
+  </view>
+
+  <!-- 风向 -->
+  <view class='wind'>
+    <view class='windxiang'>
+      <text>风向：{{winddirection}}</text>
+    </view>
+    <view class='windji'>
+      <text>风力：{{windpower}}</text>
+    </view>
+  </view>
+
+  <!-- 未来天气 -->
+  <view class='weatherarr'>
+    <view class='weatherlist' wx:for="{{weatherArr}}" wx:key="{{index}}">
+      <view class='datefont'>{{item.date}}</view>
+      <view>{{item.dayweather}}</view>
+      <view><image class='weatherimg' mode='aspectFit' src='../../assets/img/{{item.dayweather ? item.dayweather : "未知"}}.png'></image></view>
+      <view>{{item.daytemp}}° / {{item.nighttemp}}°</view>
+      <view>{{item.daywind}}风</view>
+    </view>
+  </view>
+</view>

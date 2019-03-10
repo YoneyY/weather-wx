@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#5DA3FD",
+    "navigationBarTitleText": "口袋·天气",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#fff"
+  },
+  "permission":{
+    "scope.userLocation": {
+      "desc": "获取当前位置的天气"
+    }
+  }
+}

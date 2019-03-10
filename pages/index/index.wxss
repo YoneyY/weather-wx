@@ -1,0 +1,92 @@
+page{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #5AD2FC;
+}
+.container{
+  /* height: 100%; */
+  background-image: linear-gradient(
+    to bottom,
+    #5DA3FD,
+    #5AD2FC
+  );
+}
+.city{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+}
+
+.city .icon{
+  margin:0 5px;
+}
+.weather{
+  /* border: 1px solid red; */
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.weather .temperature{
+  font-size: 100px;
+  /* font-family: 'Tensentype JiaLiXianYuanF'; */
+}
+.weathericon {
+  display: flex;
+  justify-content: space-around;
+}
+.weathericon image{
+  width: 64px;
+  height: 150px;
+}
+.weathericon .yun {
+  /* position: absolute; */
+  /* font-size: 100px; */
+  /* color: #fff; */
+  animation: yun 2s infinite ease alternate;
+}
+
+@keyframes yun {
+  form{
+    transform: translateY(20px)
+  }
+  to{
+    transform: translateY(-20px)
+  }
+}
+
+
+/* 风向风级 */
+.wind {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+
+/* 未来天气 */
+
+.weatherarr{
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.weatherarr .weatherlist{
+  flex: 1;
+  /* border: 1px solid red; */
+}
+.weatherlist view{
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.weatherlist view .weatherimg{
+  width: 32px;
+  height: 32px;
+}
+/* .weatherlist .datefont{
+  font-size: 12px;
+} */
